@@ -29,6 +29,11 @@ this incarnation of kick-off template is a progressive web app built with [angul
       - [e2e tests](#e2e-tests)
     + [deploying to github pages](#deploying-to-github-pages)
     + [further help](#further-help)
+  * [using @angular/flex-layout module](#using--angular-flex-layout-module)
+    + [fast start](#fast-start)
+    + [npm](#npm)
+    + [application usages](#application-usages)
+    + [further help](#further-help-1)
   * [credits](#credits)
   * [license](#license)
 
@@ -165,12 +170,70 @@ run `ng github-pages:deploy` to deploy to github pages.
 
 ### further help
 
-to get more help on the `angular-cli` use `ng --help` or go check out the [angular-cli readme](https://github.com/angular/angular-cli/blob/master/readme.md).
+to get more help on the `angular-cli` use `ng --help` or check out the [angular-cli readme](https://github.com/angular/angular-cli/blob/master/readme.md).
+
+---
+
+## using @angular/flex-layout module
+
+this will require a bit of footwork until npm install of [@angular/flex-layout](https://github.com/angular/flex-layout) is available via standard `npm i @angular/flex-layout` which will be after the the flex-layout v1.0.0-beta.1 release (week of december 20, 2016).
+
+### fast start 
+
+installing flex-layout with npm is **not yet** available. developers can easily install this `@angular/flex-layout` library using a **local build** and directory copy:
+
+```console
+gulp build:release
+ditto ./dist/@angular/flex-layout <your project>/node_modules/@angular/flex-layout
+```
+
+### npm
+
+the expected deployment process to **npm** (and the standardized use of `npm i @angular/flex-layout`) is **not** yet available. npm installs will be available after the the flex-layout v1.0.0-beta.1 release (week of december 20, 2016).
+
+### application usages
+in their application module, developers import the global layout api directives (as shown below): 
+
+```ts
+// demo-app-module.ts
+
+import { flexlayoutmodule } from '@angular/flex-layout';
+
+@ngmodule({
+  imports: [
+    browsermodule, commonmodule, formsmodule, httpmodule,  // import ng2 core modules
+    flexlayoutmodule.forroot(),                            // import dependency on flex-layout
+  ], 
+)}
+export class demoappmodule { }
+```
+
+in their component templates, developers easily use the layout api to build
+complex, dynamic layouts:
+
+```html
+<div fx-layout="row">
+  <div [fx-layout]="firstcol" [fx-flex]="firstcolwidth" >
+    <div fx-flex="27%"> first item in row  </div>
+    <div fx-flex      > second item in row </div>
+  </div>
+  <div [fx-layout]="secondcol" flex >
+    <div fx-flex       > first item in column  </div>
+    <div fx-flex="33px"> second item in column </div>
+  </div>
+</div>
+``` 
+
+### further help
+
+to get more help on the installation and use of @angular/flex-layout check out [flex-layout readme](https://github.com/angular/flex-layout)
 
 ---
 
 ## credits
 
+
+- [rafszul](https://github.com/rafszul) for [projekt:kreatywa](https://github.com/projekt-kreatywa)
 - tarmo leppänen - author of the [seed repo](https://github.com/tarlepp/angular2-firebase-material-demo) 
 
 ---
