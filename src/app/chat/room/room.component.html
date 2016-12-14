@@ -1,0 +1,38 @@
+<div class="outer">
+  <div class="container" #list [scrollTop]="list.scrollHeight">
+    <md-list class="normal-content">
+      <md-list-item *ngFor="let message of messages | async">
+        <div appLayout="row" appLayoutAlign="center" appFlex>
+          <div appFlex="100%">
+            <h3>
+              <span>{{((message.createdAt / 1000) | amFromUnix) | amDateFormat: 'DD.MM.YY HH:mm:ss'}}</span>
+              {{message.nick}}
+            </h3>
+            <p>
+              {{message.message}}
+            </p>
+          </div>
+        </div>
+      </md-list-item>
+    </md-list>
+  </div>
+
+  <div class="normal-content" appFlex="60px" appFlexGrow="0" appLayout="column" appLayoutJustify="flex-end">
+    <form #messageForm="ngForm" (submit)="addNewMessage()" autocomplete="off">
+      <div appLayout="row">
+        <md-input name="message" placeholder="Add new message" required appFlex="100%"
+          [(ngModel)]="message"
+          #messageControl
+        ></md-input>
+
+        <div appFlex appFlexGrow="0">
+          <button type="submit" md-icon-button color="primary"
+            [disabled]="!messageControl.value"
+          >
+            <md-icon>send</md-icon>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
