@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 
+// check out README.md for instructions how to install @angular/flex-layout
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
@@ -21,6 +24,7 @@ import { ChatModule } from './chat/chat.module';
     LoginModule,
     TodosModule,
     ChatModule,
+    FlexLayoutModule,
   ],
   bootstrap: [
     AppComponent,
