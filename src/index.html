@@ -1,9 +1,10 @@
 <!doctype html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
 
-    <title>Angular2-Firebase-Material Demo</title>
+    <title>kick-off-ng2-fire-md</title>
 
     <base href="/">
 
@@ -14,40 +15,41 @@
     <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
     <style>
-      .loading {
-        opacity: 0;
-        transition: opacity .8s ease-in-out;
-        position: fixed;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        background: #000;
-        z-index: -1;
-      }
-
-      app-root:empty + .loading {
-        opacity: 1;
-        z-index: 100;
-      }
-
-      app-root:empty + .loading h1 {
-        color: #eee;
-        font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-        position: absolute;
-        top: 50%;
-        width: 100%;
-        text-align: center;
-        transform: translate(0, -50%);
-      }
+        .loading {
+            opacity: 0;
+            transition: opacity .8s ease-in-out;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: #000;
+            z-index: -1;
+        }
+        
+        app-root:empty+.loading {
+            opacity: 1;
+            z-index: 100;
+        }
+        
+        app-root:empty+.loading h1 {
+            color: #eee;
+            font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            transform: translate(0, -50%);
+        }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
     <app-root></app-root>
 
     <div class="loading">
-      <h1>Loading...</h1>
+        <h1>Loading...</h1>
     </div>
-  </body>
+</body>
+
 </html>
