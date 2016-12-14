@@ -8,23 +8,31 @@ this incarnation of kick-off template is a progressive web app built with [angul
 
 ---
 
+
 ## table of contents
- * [what is this](#what-is-this)
- * [demo](#demo)
- * [used libraries, guides, etc.](#used-libraries-guides-etc)
-   * [libraries](#libraries)
-   * [guides](#guides)
-   * [other resources](#other-resources)
- * [installation](#installation)
-   * [configuration](#configuration)
-   * [firebase](#firebase)
- * [development](#development)
- * [tests](#tests)
-   * [unit tests](#unit-tests)
-   * [e2e tests](#e2e-tests)
- * [build](#build)
- * [author](#author)
- * [license](#license)
+
+- [kick-off-ng2-fire-md](#kick-off-ng2-fire-md)
+  * [table of contents](#table-of-contents)
+  * [what is this](#what-is-this)
+  * [the app](#the-app)
+  * [used libraries, guides, etc.](#used-libraries--guides--etc)
+    + [libraries](#libraries)
+    + [guides](#guides)
+    + [other resources](#other-resources)
+  * [installation](#installation)
+  * [firebase configuration](#firebase-configuration)
+  * [development with angular-cli](#development-with-angular-cli)
+    + [code scaffolding](#code-scaffolding)
+    + [build](#build)
+    + [tests](#tests)
+      - [unit tests](#unit-tests)
+      - [e2e tests](#e2e-tests)
+    + [deploying to github pages](#deploying-to-github-pages)
+    + [further help](#further-help)
+  * [credits](#credits)
+  * [license](#license)
+
+---
 
 ## what is this
 kick-off-ng2-fire-md is an incarnation of kick-off-template-project. this time it is a template for a progressive web app built with [angular2](https://angular.io/) + [firebase](https://firebase.google.com/) + 
