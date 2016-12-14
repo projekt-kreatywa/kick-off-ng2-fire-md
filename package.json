@@ -3,14 +3,9 @@
     "version": "0.0.0",
     "author": "rafszul <rafszul@gmail.com> (http://rafszul.projekt-kreatywa.com/)",
     "contributors": [{
-            "name": "Tarmo Leppänen",
-            "email": "<tarmo.leppanen@protacon.com>"
-        },
-        {
-            "name": "lukasz szulczewski",
-            "email": "lukas.coffee.wine@gmail.com "
-        }
-    ],
+        "name": "Tarmo Leppänen",
+        "email": "<tarmo.leppanen@protacon.com>"
+    }],
     "license": "MIT",
     "repository": {
         "type": "git",
