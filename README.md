@@ -1,7 +1,7 @@
-# coffee project
+# kick-off-ng2-fire-md
 
-is a progressive web app built with [angular2](https://angular.io/) + [firebase](https://firebase.google.com/) + 
-[google material design](https://www.google.com/design/spec/material-design/introduction.html) for the gang at the peanut vendor coffee project
+this incarnation of kick-off template is a progressive web app built with [angular2](https://angular.io/) + [firebase](https://firebase.google.com/) + 
+[google material design](https://www.google.com/design/spec/material-design/introduction.html)
 
 
 [![](https://kick-off-ng2-fire-md-4cc50.firebaseapp.com/assets/pomegranate-logo-002-header.svg)](https://kick-off-ng2-fire-md-4cc50.firebaseapp.com/)
@@ -27,8 +27,8 @@ is a progressive web app built with [angular2](https://angular.io/) + [firebase]
  * [license](#license)
 
 ## what is this
-coffee project is a progressive web app built with [angular2](https://angular.io/) + [firebase](https://firebase.google.com/) + 
-[google material design](https://www.google.com/design/spec/material-design/introduction.html) for the gang at the peanut vendor coffee project
+kick-off-ng2-fire-md is an incarnation of kick-off-template-project. this time it is a template for a progressive web app built with [angular2](https://angular.io/) + [firebase](https://firebase.google.com/) + 
+[google material design](https://www.google.com/design/spec/material-design/introduction.html)
 
 currently it contains following features:
  * social media login (facebook, twitter, google+ and github)
@@ -81,7 +81,7 @@ $ yarn install  # or yarn
 ```
 ---
 
-## configuration
+## firebase configuration
 see `/src/app/config/config.ts_example` file and copy it to `/src/app/config/config.ts` file and make necessary changes to it. note that you need a [firebase account](https://firebase.google.com/) to get all necessary config values.
 
 if you are not familiar with firebase and/or don't have a firebase developer account, sign up quickly with your google id here: [https://firebase.google.com/](https://firebase.google.com/).
@@ -114,7 +114,7 @@ logged in to read / write those.
 
 ---
 
-## development
+## development with angular-cli
 to start developing in the project run:
 
 ```bash
@@ -125,15 +125,15 @@ $ ng serve
 
 then head to `http://localhost:4200` in your browser.
 
-## code scaffolding
+### code scaffolding
 run `ng generate component component-name` to generate a new component. you can also use `ng generate directive/pipe/service/class`.
 
-## build
+### build
 run `ng build` to build the project. the build artifacts will be stored in the `dist/` directory. use the `-prod` flag for a production build.
 
-## tests
+### tests
 
-### unit tests
+#### unit tests
 to run tests run:
 
 ```bash
@@ -142,7 +142,7 @@ $ npm test
 $ ng test
 ```
 
-### e2e tests
+#### e2e tests
 to run tests run:
 
 ```bash
@@ -151,11 +151,11 @@ $ npm run e2e
 $ ng e2e
 ```
 
-## deploying to github pages
+### deploying to github pages
 
 run `ng github-pages:deploy` to deploy to github pages.
 
-## further help
+### further help
 
 to get more help on the `angular-cli` use `ng --help` or go check out the [angular-cli readme](https://github.com/angular/angular-cli/blob/master/readme.md).
 
